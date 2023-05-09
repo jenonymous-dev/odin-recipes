@@ -1,32 +1,99 @@
     @keyframes fadeinall {
-    0% {
-      opacity: 1; }
-    97% {
-      opacity: 0; }
-    98% {
-      opacity: 0;
-      -webkit-transform: translateY(0);
-      transform: translateY(0); }
-    100% {
-      opacity: 0;
-      -webkit-transform: translateY(-100%);
-      transform: translateY(-100%);
-      z-index: -1; } }
+    	0% {
+    		opacity: 1;
+    	}
+    	
+    	97% {
+    		opacity: 0;
+    	}
+    	
+    	98% {
+    		opacity: 0;
+    		-webkit-transform: translateY(0);
+    		transform: translateY(0);
+    	}
+    	
+    	100% {
+    		opacity: 0;
+    		-webkit-transform: translateY(-100%);
+    		transform: translateY(-100%);
+    		z-index: -1;
+    	}
+    }
+    
     #fadein {
-      opacity: 1;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-      transform: translateY(0);
-      background-color: #FFFFFF;
-      z-index: 999;
-      -webkit-animation-fill-mode: forwards;
-      animation-fill-mode: forwards;
-      -webkit-animation: fadeinall 1s normal both;
-      animation: fadeinall 1s normal both;
-      -webkit-animation-delay: 0.3s;
-      animation-delay: 0.3s; }
+    	opacity: 1;
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+    	height: 100%;
+    	-webkit-transform: translateY(0);
+    	-ms-transform: translateY(0);
+    	transform: translateY(0);
+    	background-color: #FFFFFF;
+    	z-index: 999;
+    	-webkit-animation-fill-mode: forwards;
+    	animation-fill-mode: forwards;
+    	-webkit-animation: fadeinall 1s normal both;
+    	animation: fadeinall 1s normal both;
+    	-webkit-animation-delay: 0.3s;
+    	animation-delay: 0.3s;
+    }
+    
+    
+    body {
+    	background-color: black;
+    }
+    
+    span {
+    	display: inline-block;
+    	animation: rainbow 5s linear infinite;
+    }
+    
+/* Rainbow text animation */
+    @keyframes rainbow {
+    	0% {
+    		color: red;
+    	}
+    	
+    	10% {
+    		color: orange;
+    	}
+    	
+    	20% {
+    		color: yellow;
+    	}
+    	
+    	30% {
+    		color: green;
+    	}
+    	
+    	40% {
+    		color: blue;
+    	}
+    	
+    	50% {
+    		color: indigo;
+    	}
+    	
+    	60% {
+    		color: violet;
+    	}
+    	
+    	70% {
+    		color: red;
+    	}
+    	
+    	80% {
+    		color: orange;
+    	}
+    	
+    	90% {
+    		color: yellow;
+    	}
+    	
+    	100% {
+    		color: green;
+    	}
+    }
