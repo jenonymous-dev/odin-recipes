@@ -1,2 +1,2 @@
 # odin-recipes
-My recipes project for The Odin Project.
+My "Project:Recipes" for the  HTML course of the Fundamentals path of The Odin Project.
